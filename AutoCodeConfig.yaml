@@ -26,7 +26,8 @@ generators:
   database: null
   inactive: false
   matches:
-  - name: "pageSize, page_size, maxResults, max_results"
+  - name: "pageSize, page_size, maxResults, max_results, limit, max_limit, pageSize,\
+      \ page_size, maxResults, max_results, limit, max_limit, "
     value: null
     methods: null
     denyRoles: null
