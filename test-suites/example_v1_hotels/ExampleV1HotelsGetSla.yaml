@@ -17,7 +17,7 @@ testCases: []
 assertions:
 - "@StatusCode == 200"
 - "@StatusCode != 404"
-- "@ResponseTime <= 1000 AND @ResponseTime > 1"
+- "@ResponseTime <= 1000 AND @ResponseTime > 100"
 cleanup: []
 severity: "Major"
 category: "SLA"
