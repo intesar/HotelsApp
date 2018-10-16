@@ -12,7 +12,11 @@ auth: "ROLE_USER"
 headers:
 - "Accept: application/json"
 - "Content-Type: application/json"
-testCases: []
+testCases:
+- id: 1
+  body: "{\n  'city' : null,\n  'description' : null,\n  'id' : null,\n  'name' :\
+    \ null,\n  'rating' : null\n}"
+  inactive: false
 assertions:
 - "@StatusCode == 401 OR @StatusCode == 403"
 cleanup: []
