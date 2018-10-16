@@ -13,7 +13,8 @@ headers:
 - "Accept: application/json"
 - "Content-Type: application/json"
 testCases: []
-assertions: []
+assertions:
+- "@StatusCode != 401 AND @StatusCode != 403"
 cleanup: []
 severity: "Major"
 category: "RBAC"
