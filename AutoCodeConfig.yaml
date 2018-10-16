@@ -15,7 +15,16 @@ generators:
   severity: null
   database: null
   inactive: true
-  matches: []
+  matches:
+  - name: null
+    value: null
+    methods: null
+    denyRoles: null
+    allowRoles: null
+    pathPatterns: null
+    resourceSamples: null
+    queryParams: null
+    bodyProperties: null
 - type: "anonymous_invalid"
   assertions:
   - "@StatusCode == 401 OR @StatusCode == 403"
@@ -82,8 +91,8 @@ generators:
     bodyProperties: null
 - type: "rbac"
   assertions:
-  - "Allowed:@StatusCode == 401 OR @StatusCode == 403"
-  - "Disallowed:@StatusCode != 401 AND @StatusCode != 403"
+  - "Disallowed:@StatusCode == 401 OR @StatusCode == 403"
+  - "Allowed:@StatusCode != 401 AND @StatusCode != 403"
   severity: null
   database: null
   inactive: false
